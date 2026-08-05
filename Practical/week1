@@ -1,0 +1,160 @@
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.18.33.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Jul 30 09:07:38 UTC 2026
+
+  System load:  0.08                Processes:             49
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       0
+  Memory usage: 4%                  IPv4 address for eth0: 172.23.101.228
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/root/.hushlogin file.
+root@DESKTOP-VMN932K:~# nano hello.c
+root@DESKTOP-VMN932K:~# gcc hello.c -o hello
+root@DESKTOP-VMN932K:~# ./hello
+Hello!!!root@DESKTOP-VMN932K:~# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /root/.git/
+root@DESKTOP-VMN932K:~# git add .
+root@DESKTOP-VMN932K:~# git commit -m "Initial Commit"
+[master (root-commit) 9df2f49] Initial Commit
+ Committer: root <root@DESKTOP-VMN932K.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 19 files changed, 196 insertions(+)
+ create mode 100644 .bash_history
+ create mode 100644 .bashrc
+ create mode 100644 .cache/motd.legal-displayed
+ create mode 100644 .lesshsQ
+ create mode 100644 .lesshst
+ create mode 100644 .motd_shown
+ create mode 100644 .profile
+ create mode 100755 files
+create mode 100644 files.c
+ create mode 100755 hello
+ create mode 100644 hello.c
+ create mode 100644 operating/program
+ create mode 100644 operating/program.c
+ create mode 100755 os
+ create mode 100644 os.c
+ create mode 100644 program.c
+ create mode 100755 programming
+ create mode 100644 programming.c
+ create mode 100644 programming.c.save
+root@DESKTOP-VMN932K:~# mkdir OSSP
+root@DESKTOP-VMN932K:~# cd OSSP
+root@DESKTOP-VMN932K:~/OSSP# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /root/OSSP/.git/
+root@DESKTOP-VMN932K:~/OSSP# touch .gitignore
+root@DESKTOP-VMN932K:~/OSSP# touch README.md
+root@DESKTOP-VMN932K:~/OSSP# ls
+README.md
+root@DESKTOP-VMN932K:~/OSSP# touch LICENSE
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  README.md
+root@DESKTOP-VMN932K:~/OSSP# touch MakeFILE
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  MakeFILE  README.md
+root@DESKTOP-VMN932K:~/OSSP# touch Makefile
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  MakeFILE  Makefile  README.md
+root@DESKTOP-VMN932K:~/OSSP# mkdir src
+root@DESKTOP-VMN932K:~/OSSP# mkdir include
+root@DESKTOP-VMN932K:~/OSSP# mkdir obj
+root@DESKTOP-VMN932K:~/OSSP# mkdir bin
+root@DESKTOP-VMN932K:~/OSSP# mkdir docs
+root@DESKTOP-VMN932K:~/OSSP# mkdir tests
+root@DESKTOP-VMN932K:~/OSSP# mkdir scripts
+root@DESKTOP-VMN932K:~/OSSP# mkdir assets
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  MakeFILE  Makefile  README.md  assets  bin  docs  include  obj  scripts  src  tests
+root@DESKTOP-VMN932K:~/OSSP# touch src/main.c src/shell.c src/parser.c src/executor.c src/builtin.c
+root@DESKTOP-VMN932K:~/OSSP# touch include/shell.h include/parser.h include/executor.h include/builtin.h
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  MakeFILE  Makefile  README.md  assets  bin  docs  include  obj  scripts  src  tests
+root@DESKTOP-VMN932K:~/OSSP# touch docs/design.md docs/report.pdf
+root@DESKTOP-VMN932K:~/OSSP# touch tests/test_parser.c tests/test_executor.c
+root@DESKTOP-VMN932K:~/OSSP# touch scripts/run.sh
+root@DESKTOP-VMN932K:~/OSSP# touch assets/architecture.png
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  MakeFILE  Makefile  README.md  assets  bin  docs  include  obj  scripts  src  tests
+root@DESKTOP-VMN932K:~/OSSP# rm MakeFILE
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  Makefile  README.md  assets  bin  docs  include  obj  scripts  src  tests
+
+root@DESKTOP-VMN932K:~/OSSP# nano fork.c
+root@DESKTOP-VMN932K:~/OSSP# gcc for.c -o fork
+cc1: fatal error: for.c: No such file or directory
+compilation terminated.
+root@DESKTOP-VMN932K:~/OSSP# gcc fork.c -o fork
+root@DESKTOP-VMN932K:~/OSSP# ./fork
+
+Parent Process
+Parent PID = 659
+Child PID = 660
+
+Child Process
+Child PID = 660
+root@DESKTOP-VMN932K:~/OSSP# nano my_shell.c
+root@DESKTOP-VMN932K:~/OSSP#
+root@DESKTOP-VMN932K:~/OSSP# gcc my_shell.c -o my_shell
+root@DESKTOP-VMN932K:~/OSSP# ./my_shell
+Enter a Linux command: date
+Thu Jul 30 09:51:09 UTC 2026
+Command executed successfully.
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  Makefile  README.md  assets  bin  docs  fork  fork.c  include  my_shell  my_shell.c  obj  scripts  src  tests
+root@DESKTOP-VMN932K:~/OSSP# gcc src/fork.c -o bin/fork
+cc1: fatal error: src/fork.c: No such file or directory
+compilation terminated.
+root@DESKTOP-VMN932K:~/OSSP# gcc fork.c -o bin/fork
+root@DESKTOP-VMN932K:~/OSSP# ./bin/fork
+
+Parent Process
+Parent PID = 688
+Child PID = 689
+
+Child Process
+Child PID = 689
+root@DESKTOP-VMN932K:~/OSSP# ls
+LICENSE  Makefile  README.md  assets  bin  docs  fork  fork.c  include  my_shell  my_shell.c  obj  scripts  src  tests
+root@DESKTOP-VMN932K:~/OSSP#
+
