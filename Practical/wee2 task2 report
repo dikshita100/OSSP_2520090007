@@ -1,0 +1,4 @@
+uname -a: showing the details of operating system
+lscpu: this displays CPU details like architecture, op-mode, byte order, address sizes.
+ps: displays the details of process
+top: displays system performance
