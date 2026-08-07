@@ -1,0 +1,27 @@
+root@DESKTOP-VMN932K:~/OSSP# nano task1.c
+root@DESKTOP-VMN932K:~/OSSP# gcc task1.c -o task1
+task1.c: In function ‘main’:
+task1.c:27:1: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
+   27 | print("Child PID: %d\n", pid);
+      | ^~~~~
+      | printf
+/usr/bin/ld: /tmp/ccJP1s4V.o: in function `main':
+task1.c:(.text+0x131): undefined reference to `print'
+collect2: error: ld returned 1 exit status
+root@DESKTOP-VMN932K:~/OSSP# nano.task1
+nano.task1: command not found
+root@DESKTOP-VMN932K:~/OSSP# nano task1.c
+root@DESKTOP-VMN932K:~/OSSP# gcc task1.c -o task1
+root@DESKTOP-VMN932K:~/OSSP# ./task1
+Enter a linux command: date
+
+Parent Process
+Parent PID: 574
+Child PID: 575
+
+Child Process
+Child PID: 575
+Executing Command: date
+
+Sat Aug  1 03:23:18 UTC 2026
+Child Process Completed
