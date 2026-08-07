@@ -1,0 +1,12 @@
+
+root@DESKTOP-VMN932K:~# nano code.c
+root@DESKTOP-VMN932K:~# gcc code.c -o code
+root@DESKTOP-VMN932K:~# ./code
+Enter a command (type exit to quit): ls
+You Entered: ls
+Enter a command (type exit to quit): date
+You Entered: date
+Enter a command (type exit to quit): pwd
+You Entered: pwd
+Enter a command (type exit to quit):
+
